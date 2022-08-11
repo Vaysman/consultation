@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<title>Conlang Derivations Database</title>
+</head>
+
+<body>
+<div class="dropdown-plans">
+	<form action="langresult">
+	<label> Please select the language:</label>
+    <select id="down_drop" name="language">
+        
+		{% for l in langs %}
+			<option value="{{ l }}">{{l}}</option>
+		{% endfor %}
+		
+	</select>
+	<input type="submit" value="Search">
+	</form>
+</div>
+
+</body></html>

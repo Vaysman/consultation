@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<title>Conlang Derivations Database</title>
+</head>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+table#t01 {
+  width: 100%;    
+  background-color: #f1f1c1;
+}
+</style>
+
+
+
+
+
+
+
+{% for key, value in dict_csv.items() %}
+   
+		{% for v in value.values() %}
+		
+		{% endfor %}
+   
+{% endfor %}
+
+<table>
+<tbody><tr><th colspan="4">
+	ID
+<th colspan="4">
+	Language
+</th>
+<th colspan="4">
+	Derivation
+</th>
+<th colspan="4">
+	Class
+</th>
+<th colspan="4">
+	Extra info
+</th>
+<th colspan="4">
+  Example
+</th></tr><tr><td colspan="4"> {{ v }} </td></tr></tbody></table>
+
+<ul>
+		{% for name, url in urls.items() %}
+		<li><a href={{ url }}>{{ name }}</a></li>
+		{% endfor %}
+</ul>
+
+</body></html>	
